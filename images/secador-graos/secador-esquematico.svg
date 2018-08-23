@@ -40,9 +40,9 @@
      inkscape:window-height="713"
      id="namedview1305"
      showgrid="false"
-     inkscape:zoom="0.40347485"
-     inkscape:cx="574.91962"
-     inkscape:cy="419.98217"
+     inkscape:zoom="0.1426499"
+     inkscape:cx="-78.063598"
+     inkscape:cy="566.92726"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -62,7 +62,7 @@ rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges
      importFlag="0"
      c_portOfADImportHack=""
      c_transformList=""
-     transform="matrix(3.0159961,0,0,2.795467,-851.94752,-430.3973)">
+     transform="matrix(1.658096,0,0,1.5368563,-322.60491,-63.600061)">
     <g
        c_origin="620,190"
        c_para="package`LED-3MM/2.54`BOM_LCSC`C73643`BOM_Supplier`LCSC`BOM_Manufacturer`EVERLIGHT`BOM_Manufacturer Part`204-10UYC/S530-A3`spicePre`L`"
@@ -203,7 +203,7 @@ rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges
            style="display:none;fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:round;shape-rendering:crispEdges" />
       </g>
       <polygon
-         points="620,190 610,180 610,200 "
+         points="610,180 610,200 620,190 "
          id="gge421"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polyline
@@ -215,11 +215,11 @@ rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges
          id="gge423"
          style="fill:none;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polygon
-         points="627,175 629,177 631,173 "
+         points="629,177 631,173 627,175 "
          id="gge424"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polygon
-         points="623,171 625,173 627,169 "
+         points="625,173 627,169 623,171 "
          id="gge425"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polyline
@@ -535,7 +535,7 @@ rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges
            style="display:none;fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:round;shape-rendering:crispEdges" />
       </g>
       <polygon
-         points="730,170 720,160 720,180 "
+         points="720,160 720,180 730,170 "
          id="gge496"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polyline
@@ -547,11 +547,11 @@ rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges
          id="gge498"
          style="fill:none;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polygon
-         points="737,155 739,157 741,153 "
+         points="739,157 741,153 737,155 "
          id="gge499"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polygon
-         points="733,151 735,153 737,149 "
+         points="735,153 737,149 733,151 "
          id="gge500"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polyline
@@ -699,7 +699,7 @@ rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges
            style="display:none;fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:round;shape-rendering:crispEdges" />
       </g>
       <polygon
-         points="710,150 700,140 700,160 "
+         points="700,140 700,160 710,150 "
          id="gge522"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polyline
@@ -711,11 +711,11 @@ rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges
          id="gge524"
          style="fill:none;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polygon
-         points="717,135 719,137 721,133 "
+         points="719,137 721,133 717,135 "
          id="gge525"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polygon
-         points="713,131 715,133 717,129 "
+         points="715,133 717,129 713,131 "
          id="gge526"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polyline
@@ -863,7 +863,7 @@ rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges
            style="display:none;fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:round;shape-rendering:crispEdges" />
       </g>
       <polygon
-         points="690,130 680,120 680,140 "
+         points="680,120 680,140 690,130 "
          id="gge548"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polyline
@@ -875,11 +875,11 @@ rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges
          id="gge550"
          style="fill:none;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polygon
-         points="697,115 699,117 701,113 "
+         points="699,117 701,113 697,115 "
          id="gge551"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polygon
-         points="693,111 695,113 697,109 "
+         points="695,113 697,109 693,111 "
          id="gge552"
          style="fill:#efefef;stroke:#880000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <polyline
@@ -1532,7 +1532,7 @@ rect, circle, ellipse, polyline, line, polygon, path {shape-rendering:crispEdges
            style="display:none;fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:round;shape-rendering:crispEdges" />
       </g>
       <polygon
-         points="561,103 550,103 550,104 580,104 580,103 569,103 569,100 561,100 "
+         points="580,103 569,103 569,100 561,100 561,103 550,103 550,104 580,104 "
          id="gge665"
          style="fill:#0000ff;stroke:#0000ff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;shape-rendering:crispEdges" />
       <circle
