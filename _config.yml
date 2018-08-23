@@ -16,7 +16,7 @@ title:            CodeMake
 tagline:          ''
 description:      'Blog sobre projetos desenvolvidos na Engenharia de Computação.'
 url:              http://matheus-pessoa16.github.io.com/blog
-baseurl:          "/"
+baseurl:          ""
 includes: ["images"]
 author:
   name:           'Matheus Pessoa'
