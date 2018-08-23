@@ -1,7 +1,7 @@
 # Dependencies
 markdown:         redcarpet
 highlighter:      pygments
-
+excerpt_separator : ==
 
 
 plugins:
@@ -24,7 +24,7 @@ author:
 
 paginate:         5
 
-excerpt_separator : "<!--more-->"
+
 
 # Custom vars          
 

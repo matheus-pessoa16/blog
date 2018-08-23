@@ -9,7 +9,7 @@ controlador Atmega328p, que vem no Arduino.
 Como o projeto é um pouco grande, decidi dividí-lo da seguinte maneira:
 1. Objetivos e esquemático
 2. Código fonte e explicações
-3. Funcionamento e app Android <!--more-->
+3. Funcionamento e app Android
 
 ### Objetivos do Projeto
 
@@ -23,6 +23,7 @@ O sistema especificado precisava ter os seguintes requisitos:
 * LEDs de indicação para início de processo, nível de sensores e PWM do ventilador
 * Botão para iniciar o processo
 * Painel remoto para visualização de informações
+
 
 
 Definidas as especificações de funcionamento, decidi montar um esquemático do circuito para facilitar a visualização e montagem. Usei para isso o editor de circuito da [EasyEDA](www.easyeda.com) que é online e gratuito. O resultado foi está na imagem abaixo.
