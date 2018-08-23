@@ -13,7 +13,7 @@ plugins:
 title:            CodeMaker
 tagline:          'Blog sobre projetos makers'
 description:      'Este blog foi criado para mostrar projetos desenvolvidos no curso de Engenharia de Computação.'
-url:              "http://matheus-pessoa16.github.io.com"
+url:              "http://matheus-pessoa16.github.io.com/blog"
 baseurl:          ""
 
 author:
