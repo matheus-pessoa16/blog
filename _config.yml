@@ -2,6 +2,8 @@
 markdown:         redcarpet
 highlighter:      pygments
 
+
+
 plugins:
   - jekyll-paginate
   - jekyll-gist
@@ -15,12 +17,14 @@ tagline:          ''
 description:      'Blog sobre projetos desenvolvidos na Engenharia de Computação.'
 url:              http://matheus-pessoa16.github.io.com/blog
 baseurl:          "/"
-
+includes: ["images"]
 author:
   name:           'Matheus Pessoa'
   url:            ''
 
 paginate:         5
+
+excerpt_separator : "<!--more-->"
 
 # Custom vars          
 
