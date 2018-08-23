@@ -1,4 +1,4 @@
-# Foobar ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+# CodeMaker ![CI status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
 Repositório para o blog de tecnologia que mantenho para registrar alguns projetos pessoais e da faculdade de Engenharia de Computação.
 
