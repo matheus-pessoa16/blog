@@ -28,7 +28,7 @@ O sistema especificado precisava ter os seguintes requisitos:
 Definidas as especificações de funcionamento, decidi montar um esquemático do circuito para facilitar a visualização e montagem. Usei para isso o editor de circuito da [EasyEDA](www.easyeda.com) que é online e gratuito. O resultado foi está na imagem abaixo.
 
 
-![placeholder](images/secador-graos/secador-esquematico.svg =300x300 "Esquemático do circuito")
+![placeholder](images/secador-graos/secador-esquematico2.svg =300x300 "Esquemático do circuito")
 
 O circuito acima mostra a pinagem do Atmega328p e não os pinos do Arduino. Mas é fácil achar a referência do Arduino para as ligações.
 Decidi usar um transistor para fazer a ativação do ventilador. Poderia ter sido um optoacoplador, mas usei o que estava mais próximo naquele momento (hehe).
