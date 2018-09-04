@@ -13,6 +13,8 @@ Como o projeto é um pouco grande, decidi dividí-lo da seguinte maneira:
 2. Código fonte e explicações
 3. Funcionamento e app Android
 
+<!--break-->
+
 ### Objetivos do Projeto
 
 O sistema especificado precisava ter os seguintes requisitos:
