@@ -15,7 +15,7 @@ plugins:
 title:            CodeMake
 tagline:          ''
 description:      'Blog sobre projetos desenvolvidos na Engenharia de Computação.'
-url:              'http://matheus-pessoa16.github.io.com'
+url:              'http://matheus-pessoa16.github.io.com/blog/'
 baseurl:          ""
 includes:         ["images"]
 author:
