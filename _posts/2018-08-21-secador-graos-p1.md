@@ -30,12 +30,12 @@ O sistema especificado precisava ter os seguintes requisitos:
 
 
 
-Definidas as especificações de funcionamento, decidi montar um esquemático do circuito para facilitar a visualização e montagem. Usei para isso o editor de circuito da [EasyEDA](www.easyeda.com) que é online e gratuito. O resultado foi está na imagem abaixo.
+Definidas as especificações de funcionamento, decidi montar um esquemático do circuito para facilitar a visualização e montagem. Usei para isso o editor de circuito Fritzing que é gratuito e está disponível para baixar no linux. O resultado foi está na imagem abaixo.
 
 
 ![placeholder](/blog/images/secador-graos/secador-esquematico-fritzing.svg "Esquemático do circuito")
 
-O circuito acima mostra a pinagem do Atmega328p e não os pinos do Arduino. Mas é fácil achar a referência do Arduino para as ligações.
+O circuito acima mostra todas as ligações que foram usadas no Arduino e no circuito. O código será apresentado com uma pinagem diferente, referente ao Atmega328p.
 Decidi usar um transistor para fazer a ativação do ventilador. Poderia ter sido um optoacoplador, mas usei o que estava mais próximo naquele momento (hehe).
 Os quatro LEDs são colocados cada um em um pino que gera PWM no Arduino. Dois são usados para indicar o nível dos sensores no momento da leitura; um é usado para indicar quando o processo de secagem é iniciado e o último é usado para indicar o PWM que está chegando no ventilador.
 
