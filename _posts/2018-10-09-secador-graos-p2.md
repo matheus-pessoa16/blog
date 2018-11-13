@@ -42,6 +42,9 @@ Aqui, basta chamar a função initUSART() na função main e, sempre que quiser 
 Essas são as três partes estruturais do código do projeto. Uma seção para leitura dos dados, outra para tratamento das informações e uma última que realiza comunicação. Como é possível notar, diferente do Arduino em que temos uma função 'setup' e uma função 'loop', no código em C puro seguimos o padrão de ter uma função 'main' e dentro um laço infinito que executa as funções.
 
 Na próxima postagem, que será a última, mostraremos o código e o sistema em funcionamento. 
+O código completo está [aqui](https://github.com/matheus-pessoa16/Sistemas-Embarcados/blob/master/Arduino/Secador%20de%20Gr%C3%A3os/secador_graos.c).
+
+
 
 Até lá.
 
