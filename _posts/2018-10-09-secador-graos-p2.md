@@ -55,6 +55,6 @@ Matheus Pessoa
 
 [Comunicação serial](https://www.robocore.net/tutoriais/comparacao-entre-protocolos-de-comunicacao-serial.html)
 
-[Comunicação serial] (http://newtoncbraga.com.br/index.php/telecom-artigos/1709-tel006.html)
+[Comunicação serial](http://newtoncbraga.com.br/index.php/telecom-artigos/1709-tel006.html)
 
-[Interrupções] (http://www.avr-tutorials.com/interrupts/about-avr-8-bit-microcontrollers-interrupts)
+[Interrupções](http://www.avr-tutorials.com/interrupts/about-avr-8-bit-microcontrollers-interrupts)
