@@ -29,8 +29,8 @@ Uma interrupção nada mais é do que uma espécie de chamada de função super 
 
 <script src="https://gist.github.com/matheus-pessoa16/439a40e078cf3137afd9be4a49c84cbb.js"></script>
 
-A interrupção de tempo é responsável por calcular os valores da curva de secagem e por atualizar p PWM do motor e dos LEDs que indicam o nível de leitura dos sensores. A chamada da função ISR determina como o tratamento de uma interrupção do tipo overflow do Timer2 vai ser realizado. Existem outros parâmetros que estão disponíveis [aqui] (http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf) na página 49. A interrupção é executada automaticamente a cada overflow do timer sem a necessidade de ser chamada em nenhum local.
-
+A interrupção de tempo é responsável por calcular os valores da curva de secagem e por atualizar o PWM do motor e dos LEDs que indicam o nível de leitura dos sensores. A chamada da função ISR determina como o tratamento de uma interrupção do tipo overflow do Timer2 vai ser realizado. Existem outros parâmetros que estão disponíveis [aqui] (http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf) na página 49. A interrupção é executada automaticamente a cada overflow do timer sem a necessidade de ser chamada em nenhum local.
+A contagem do tempo juntamente com a execução da curva só iniciarão ao pressionar o botão de ligar. O botão, após iniciada a secagem, fica desabilitado durante todo o processo e é reabilitado no fim.
 #### Configuração da Comunicação Serial
 
 A última seção do código trata da configuração da comunicação serial UART. Esse é um padrão de comunicação serial que usa um RX para receber os dados e um TX para transmissão. Como já dito, a comunicação é serial, ou seja, é feito o envio bit a bit, um por vez. No Atmega, existem alguns registradores que são configurados e que são mostrados abaixo.
