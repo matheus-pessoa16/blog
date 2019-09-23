@@ -26,7 +26,7 @@ transfusion = pd.read_csv('datasets/transfusion.data')
 transfusion.info()
 
 ```
-![Informações](images/analise_tranfusao/info.png "Informações do Dataset")
+![Informações](/blog/images//analise_tranfusao/info.png "Informações do Dataset")
 
 A coluna alvo é 'whether he/she donated blood in March 2007'. Os dados são binários em que 0 representa que o doador não irá doar novamente e 1 que irá doar. Para facilitar a leitura, mudamos o nome dessa coluna para 'target'.
 
@@ -37,14 +37,14 @@ transfusion.rename(
 )
 transfusion.head(2)
 ```
-![Coluna target](images/analise_tranfusao/head.png "Duas primeiras linhas com a nova coluna")
+![Coluna target](/blog/images//analise_tranfusao/head.png "Duas primeiras linhas com a nova coluna")
 
 Podemos fazer uma contagem de valores para entender o desbalaceamento das classes (irá doar - 0 ou não irá doar - 1). Para isso, podemos fazer uso da função ```value_counts()```, com ou em normalização.
 
 ```python
 transfusion.target.value_counts()
 ```
-![Contagem](images/analise_tranfusao/count.png "Contagem dos valores no dataset")
+![Contagem](/blog/images//analise_tranfusao/count.png "Contagem dos valores no dataset")
 
 Como podemos perceber a partir da contagem de valores, as classes estão desbalanceadas, com a classe positiva tendo, aproximadamente, três vezes mais exemplos que a negativa. Como o objetivo é treinar um modelo de aprendizagem, esse desbalanceamento pode enviesar bastante os resultos. Não foi aplicado nenhum tratamento específico para fazer aumentar as amostras. A ação adotada foi preservar essa proporção de dados durante a criação dos conjuntos de teste e treino. Para isso, a função ```train_test_split()``` possui um parâmetro chamado stratify, que recebe os dados que estão desbalanceados para calcular a proporção e aplicá-la.
 
@@ -86,7 +86,7 @@ print('\nBest pipeline steps:', end='\n')
 for idx, (name, transform) in enumerate(tpot.fitted_pipeline_.steps, start=1):
     print(f'{idx}. {transform}')
 ```
-![Resultado TPOT](images/analise_transfusao/tpot.png)
+![Resultado TPOT](/blog/images//analise_transfusao/tpot.png)
 
 O classificador TPOT configurado utiliza vários parâmetros de controle dos algoritmos genéticos como o números de gerações que serão usadas para encontrar o melhor modelo, o tamanho da população que será mantida após cada geração e um elemento aleatório para causar mutações nos indivíduos (existe um parâmetro padrão para taxa de mutação que é 0.9 e outro para a taxa de cruzamento entre indivíduos que é de 0.1). O método de avaliação das novas populações é o AUC (area under the ROC curve).
 No resultado apresentado na imagem acima, são mostradas as cinco gerações configuradas com suas respectivas saídas, além do melhor modelo (LogisticRegression) e parâmetros para o dataset bem como o valor do AUC.
@@ -95,7 +95,7 @@ O modelo escolhido é linear, portanto, assume que as variáveis de entrada são
 ```python
 X_train.var().round(3)
 ```
-![Variância](images/analise_transfusao/var.png)
+![Variância](/blog/images//analise_transfusao/var.png)
 
 A variância na coluna Monetary é muito alta. Muitas ordens de grandeza mais alta. O projeto já define vários parâmetros iniciais para minimizar o número de decisões a serem tomadas. Assim, para reduzir essa variância, foi sugerida a utlização de uma normalização logarítmica. Vamos aplicar o logarítmo sobre a coluna Monetary e recalcular a variância.
 
@@ -112,6 +112,6 @@ for df_ in [X_train_normed, X_test_normed]:
 X_train_normed.var().round(3)
 ```
 
-![Transformação Logarítmica](images/analise_transfusao/log.png)
+![Transformação Logarítmica](/blog/images//analise_transfusao/log.png)
 
 A variância diminuiu para um valor menor que 1, como é possível observar na imagem acima. Os demais valores não apresentam uma variação de muitas ordens de grandeza, não necessitando aplicar o logarítmo neles. Podemos agora reavaliar o desempenho de um classificador linear sobre o novo conjunto de dados.
