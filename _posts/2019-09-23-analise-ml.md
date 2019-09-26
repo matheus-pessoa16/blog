@@ -115,3 +115,51 @@ X_train_normed.var().round(3)
 ![Transformação Logarítmica](/blog/images/analise-transfusao/log.png)
 
 A variância diminuiu para um valor menor que 1, como é possível observar na imagem acima. Os demais valores não apresentam uma variação de muitas ordens de grandeza, não necessitando aplicar o logarítmo neles. Podemos agora reavaliar o desempenho de um classificador linear sobre o novo conjunto de dados.
+
+```python
+tpot = TPOTClassifier(
+    generations=5,
+    population_size=20,
+    verbosity=2,
+    scoring='roc_auc',
+    random_state=42,
+    disable_update_check=True,
+    config_dict='TPOT light'
+)
+tpot.fit(X_train_normed, y_train)
+
+tpot_auc_score = roc_auc_score(y_test, tpot.predict_proba(X_test_normed)[:, 1])
+print(f'\nAUC score: {tpot_auc_score:.4f}')
+
+print('\nBest pipeline steps:', end='\n')
+for idx, (name, transform) in enumerate(tpot.fitted_pipeline_.steps, start=1):
+    print(f'{idx}. {transform}')
+```
+
+O resultado foi
+
+![Treino sobre dados normalizados](/blog/images/analise_transfusao/nova_analise.png)
+
+Agora, com os dados possuindo uma variância mais aceitável, podemos usar um modelo linear, baseado no que o TPOT encontrou para verificar como será a predição dos resultados. Assim, instanciamos um regressão logística com os parâmetros otimizados
+
+```python
+from sklearn import linear_model
+
+logreg = linear_model.LogisticRegression(C=25.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='warn',
+          n_jobs=None, penalty='l2', random_state=42, solver='liblinear',
+          tol=0.0001, verbose=0, warm_start=False
+)
+
+logreg.fit(X_train_normed, y_train)
+
+logreg_auc_score = roc_auc_score(y_test, logreg.predict_proba(X_test_normed)[:, 1])
+print(f'\nAUC score: {logreg_auc_score:.4f}')
+
+```
+
+O resultado desse modelo não foi muito melhor do que antes de normalizar o dataset. O valor do AUC foi de 0.7829 contra 0.7718 do primeiro resultado. Algumas coisas que podem explicar esse resultado são o desbalanceamento do conjunto de dados (a classe negativa aparece muito mais do que a positiva) e a variância ainda alta do dataset. 
+
+Esse pequeno projeto explicado foi realizado em um trabalho da disciplina de Machine Learning. Não é complexo, mas ajuda a explorar conceitos como a métrica AUC, usar um otimizador de modelos (TPOT) e entender um pouco mais o impacto do preprocessamento sobre dados e o desbalanceamento de classes. No próximo projeto, usarei coisas mais complexas como Pipelines e buscas em grade (GridSeach). 
+
+Matheus Pessoa
